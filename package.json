@@ -1,0 +1,29 @@
+{
+  "name": "octane-wire",
+  "version": "1.0.0",
+  "description": "Electron Application for managing deployments via graphical interface.",
+  "main": "src/system/app.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development webpack",
+    "build:prod": "cross-env NODE_ENV=production webpack",
+    "dev:electron": "electron . ",
+    "dev": "npm run build && webpack-dev-server --content-base dist",
+    "start": "npm run dev"
+  },
+  "author": "Maksym Yadvinskyy (@VeprUA)",
+  "license": "GNU GPLv3",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "serve": "^11.0.2",
+    "style-loader": "^0.23.1",
+    "svelte": "^3.6.4",
+    "svelte-loader": "^2.13.4",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "electron": "^5.0.8"
+  }
+}
